@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'iransansmed';
+    src: url(IRANSansWeb_Medium.ttf);
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'iransansmed';
+}
+.slide-container{
+  max-width: 600px;
+  max-height: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+.slide{
+  width: 600px;
+  height: 350px;
+}
+.img-slide{
+  width: 100%;
+  height: 100%;
+}
+.prev{
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 16px;
+  color: black;
+  top: 50%;
+  left: 0;
+  transition: 0.6s ease;
+  margin-top: -22px;
+  position: absolute;
+  font-family: 'iransansmed';
+}
+
+.next{
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 16px;
+  color: black;
+  top: 50%;
+  right: 0;
+  transition: 0.6s ease;
+  margin-top: -22px;
+  position: absolute;
+  font-family: 'iransansmed';
+}
+
+.prev:hover,
+.next:hover{
+  background-color: rgb(156, 156, 156);
+}
+.nameslide{
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+.slide-number{
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot{
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -moz-animation-name: fade;
+  -o-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+.divdot{
+    text-align: center;
+}

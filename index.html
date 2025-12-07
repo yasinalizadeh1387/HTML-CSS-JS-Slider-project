@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="این صفحه تمرین من یاسین امامعلی زاده برای اسلایدر است با زبان های HTML CSS JS">
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    <meta name="keyboard" content="js slider progtammer"/>
+    <link rel="stylesheet" href="style.css">
+    <title>پروژه اسلایدر</title>
+</head>
+<body>
+
+<div class="slide-container">
+      <div class="slide-no" id="slide-no"></div>
+
+      <div class="slide fade">
+        <img
+        class="img_slide"
+          src="./img/IMG_20230403_044357_815.jpg"
+          alt="image-1"
+        />
+        <div class="caption">صفحه اول</div>
+      </div>
+
+      <div class="slide fade">
+        <img
+        class="img_slide"
+          src="./img/IMG_20240301_190746_801.jpg"
+          alt="image-1"
+        />
+        <div class="caption">صفحه دوم</div>
+      </div>
+
+      <div class="slide fade">
+        <img
+        class="img_slide"
+          src="./img/بکگراند.jpg"
+          alt="image-1"
+        />
+        <div class="caption">صفحه سوم</div>
+      </div>
+
+      <a class="prev" onclick="changeSlide(-1)">قبلی</a>
+        <a class="next" onclick="changeSlide(1)">بعدی</a>
+    </div>
+    <div class="divdot">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

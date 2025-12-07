@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>تمرین اسلایدر</title>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="slide-number" id="slide-number"></div>
+
+    <div class="slide fade">
+      <img class="img-slide" src="img/بکگراند.jpg" alt="slide1">
+      <div class="nameslide"></div>
+    </div>
+
+    <div class="slide fade">
+      <img class="img-slide" src="img/IMG_20230403_044357_815.jpg" alt="slide2">
+      <div class="nameslide"></div>
+    </div>
+
+    <div class="slide fade">
+      <img class="img-slide" src="img/IMG_20240301_190746_801.jpg" alt="slide3">
+      <div class="nameslide"></div>
+    </div>
+
+    <button class="prev" onclick="changeSlide(-1)">قبلی</button>
+    <button class="next" onclick="changeSlide(1)">بعدی</button>
+  </div>
+
+  <div class="divdot">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
