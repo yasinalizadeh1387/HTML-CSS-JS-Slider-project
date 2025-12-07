@@ -12,6 +12,7 @@ body{
   margin: 0 auto;
   margin-top: 10%;
   position: relative;
+  border-radius: 10px;
 }
 .slide{
     height: 350px;
